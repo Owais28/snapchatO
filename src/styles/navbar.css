@@ -1,0 +1,29 @@
+.navbar {
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    background-color: rgb(23, 23, 23);
+    color: white;
+    padding: 15px 10px;
+    height: max-content;
+
+}
+
+h4 {
+    font-weight: 400;
+}
+.navbar-logo {
+    display: flex;
+}
+
+.navbar-logo h2 {
+    color: rgb(111, 205, 243);
+}
+.navbar-logo > img {
+    width: 50px;
+    height: auto;
+}
+
+.navbar-course {
+    margin-right: 10px;
+}

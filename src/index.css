@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Roboto', BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  sans-serif;
+-webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale;
+}
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.padding-content {
+  padding-left: 20px;
+  padding-right: 15px;
+}
+
+.flex {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.state-container {
+  text-align: center;
+  padding: 20px;
+  /* background-image: linear-gradient(to right bottom,rgb(179, 179, 179), white); */
+}
+
+.state {
+  font-weight: 700;
+  /* display: flex; */
+  margin: 0px auto;
+  /* justify-content: center; */
+  /* text-align: center; */
+  /* align-self: center; */
+  /* align-items: center; */
+  /* width: 100px; */
+  /* height: 100px; */
+  font-size: 9rem;
+  padding: 10px;
+  /* border-radius: 50%; */
+  background-image: linear-gradient(to right bottom,rgb(0, 128, 255),rgb(0, 72, 255) 10%,rgb(224, 41, 172)  );
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: all .3s ease-in;
+}
+.state::selection {
+  background-color: rgba(0, 0, 0, 0.941);
+  color: red;
+}
+.button {
+  margin: 10px 15px;
+  font-size: 2rem;
+  min-width: 100px;
+  outline: none;
+  border: none;
+  /* background-image: none; */
+  /* transition: background 1s ease-in; */
+  text-align: center;
+  justify-content: center;
+  
+}
+
+.button:active {
+  outline: 2px solid black;
+  background-image: linear-gradient(to right bottom,rgb(0, 128, 255),rgb(0, 72, 255) 10%,rgb(224, 41, 172)  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  
+
+}
+
+.active {
+  animation: number .5s ease-in-out;
+  transition: font-size 0.5s ease-in-out;
+}
+
+@keyframes number {
+  0% {
+    font-size: 9rem;
+  }
+  50% {
+    font-size: 10rem;
+  }
+  100% {
+    font-size: 9rem;
+  }
+}
+
+.text-add-button {
+  padding: 10px;
+  border-radius: 10px;
+}
+.text-add {
+  text-align: center;
+}
+.flex1 {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 15px;
+  /* background-color: black; */
+}
+.texts {
+  margin: 5px 5px;
+  text-align: center;
+  font-size: 1rem;
+  padding: 10px;
+  
+  color: white;
+  width: max-content;
+  border-radius: 5px;
+  background-image: linear-gradient(to right bottom,rgb(0, 128, 255),rgb(0, 72, 255) 10%,rgb(224, 41, 172)  );
+  /* transition: outline .3s ease-in; */
+}
+
+.texts:hover {
+  outline: 2px solid black ;
+  /* box-shadow: 0px 0px 10px -1px rgb(7, 106, 255); */
+}
