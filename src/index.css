@@ -57,7 +57,21 @@ code {
   background-clip: text;
   -webkit-text-fill-color: transparent;
   transition: all .3s ease-in;
+  animation: bg-gradient 1s infinite ease-in-out ;
 }
+
+@keyframes bg-gradient {
+  0% {
+    background-image: linear-gradient(to right bottom,yellow,rgb(0, 72, 255) 10%,rgb(224, 41, 172)  );
+  }
+  50% {
+    background-image: linear-gradient(to right bottom,pink,rgb(0, 72, 255) 10%,yellow  );
+  }
+  100%{
+    background-image: linear-gradient(to right bottom,yellow,rgb(0, 72, 255) 10%,red  );
+  }
+}
+
 *::selection {
   background-color: violet;
   color: white;
