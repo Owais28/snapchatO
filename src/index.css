@@ -137,3 +137,33 @@ code {
 p {
   font-family: 'Open Sans',sans-serif;
 }
+
+.searchTerm{
+  /* font-family: 'Courier New', Courier, monospace; */
+  font-weight: 800;
+  background-image: linear-gradient(to right bottom,rgb(0, 128, 255),rgb(0, 72, 255) 10%,rgb(224, 41, 172)  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-color: whitesmoke;
+}
+
+label[htmlFor="search"]{}
+
+.searchbar {
+  padding: 10px;
+  background-color: rgb(123, 0, 255);
+  width: max-content;
+  margin: 0 auto;
+  border-radius: 100px;
+  color: white;
+  border: 1px solid rgb(11, 0, 21);
+}
+
+.searchbar > input {
+  border-radius: none;
+  outline: none;
+  border: none;
+  background-color: inherit;
+  color: inherit;
+  font-size: 1rem;
+}

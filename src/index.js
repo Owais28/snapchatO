@@ -16,6 +16,11 @@ import StateComponent from "./components/StateComponent";
 import RandomQuote from "./components/RandomQuote";
 import TextAdd from "./components/TextAdd";
 import BlogPost from "./components/BlogPost";
+import Boxes from "./components/Boxes";
+import Search from "./components/Search";
+import ConditionalRendering from "./components/ConditionalRendering";
+
+
 
 function App(props) {
 
@@ -42,8 +47,9 @@ function App(props) {
             <div className="flex">
             <BlogPost post = {posts[0]}/>
             </div>
-            
-            
+            <Boxes/>
+            <Search className="search-wrapper"/> 
+            <ConditionalRendering/>
         </div>
         
     );
