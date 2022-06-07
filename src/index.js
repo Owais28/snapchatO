@@ -9,7 +9,7 @@ import './index.css'
 
 const App = () =>{
 
-    const [notificationCount, setNotificationCount] = React.useState(2)
+    const [notificationCount, setNotificationCount] = React.useState(95)
 
     return(<>
     <NotificationContext.Provider value={{notificationCount, setNotificationCount}}>

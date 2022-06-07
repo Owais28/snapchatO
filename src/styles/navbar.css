@@ -41,6 +41,8 @@ h4 {
 }
 .navbar-logo > img {
     width: 50px;
+    padding-left: 10px;
+    padding-right: 10px;
     height: auto;
     animation : rotateThis 5s infinite ;
     transition: none;
@@ -164,8 +166,8 @@ h4 {
     background-color: red;
     border-radius: 100px;
     font-size: .7rem;
-    width: 18px;
-    max-width: 18px;
+    width: max-content;
+    /* max-width: 18px; */
     overflow: hidden;
     height: 18px;
     align-items: center;

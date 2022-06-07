@@ -1,5 +1,5 @@
 import React from "react";
-import reactLogo from "../original/logo.svg" //this is a way to use images in react
+import reactLogo from "../images/React-icon.svg" //this is a way to use images in react
 import '../styles/navbar.css' //importing styles for this specific component
 import { NotificationContext } from "..";
 
@@ -11,6 +11,10 @@ export default function Navbar(props){
     const [modal, setModal] = React.useState(false);
 
     const {notificationCount} = React.useContext(NotificationContext)
+    let count = notificationCount.toString();
+    if(notificationCount > 99){
+        count = '99+'
+    }
 
     // console.log(notificationCount)
     return(
@@ -22,9 +26,9 @@ export default function Navbar(props){
             <div className="notification__wrapper">
                     <BiBell className="icon"/>
                     <div className="notification">
-                        {notificationCount}
+                        {count}
                     </div>
-                    </div>
+            </div>
             </div>
             <ul className="navlist">
                 <li>
