@@ -16,8 +16,9 @@ export const SectionWithPadding = styled.div`
 
 export const NavbarSection = styled.div`
     width : 100%;
-    background-color:white;
+    background-color:transparent;
     border-bottom:1px solid whitesmoke;
+backdrop-filter : blur(1rem) ;
     height:60px;
     display:flex;
     justify-content:space-between;
