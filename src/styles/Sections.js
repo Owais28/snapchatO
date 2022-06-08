@@ -22,6 +22,7 @@ export const NavbarSection = styled.div`
     justify-content:space-between;
     padding:0px 8px;
     align-items:center;
+    // padding-bottom:8px;
 
 `
 
