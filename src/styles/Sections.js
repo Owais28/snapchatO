@@ -10,7 +10,8 @@ export const SectionWithPadding = styled.div`
     width:100%;
     ${(props) => {if(props.on === "lr")
         return 'padding-left : 8px;padding-right:8px' 
-    else return `padding-left : ${props.onLeft}px;padding-right :${props.onRight}px ;`}};
+    else if(props.on === "lrtb") return `padding-left : ${props.onLeft}px;padding-right :${props.onRight}px;
+    padding-top :${props.onTop}px;padding-bottom :${props.onBottom}px;`}};
 ` 
 
 export const NavbarSection = styled.div`
@@ -24,6 +25,7 @@ export const NavbarSection = styled.div`
     align-items:center;
     // padding-bottom:8px;
     position:sticky;
+    top:0;
 
 `
 

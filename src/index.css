@@ -331,3 +331,27 @@ a:hover {
   text-decoration: underline;
   /* color: rgb(4, 130, 214); */
 }
+
+.chat__wrapper {
+  display: flex;
+  width: 100%;
+  align-items: center;
+}
+.mr-1 {
+  margin-right: 13px;
+}
+.chat__border {
+  border-bottom: 1px solid whitesmoke;
+}
+
+.chat__data {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.chat__snap {
+  font-size: 2rem;
+  color: rgb(217, 217, 217);
+}
