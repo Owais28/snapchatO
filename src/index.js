@@ -14,7 +14,7 @@ export default function App() {
     <MobileSection>
         <Navbar/>
         <ChatIndividual person="M Imamuddin" status="received"/>
-        <ChatIndividual person="Chetan" status="received"/>
+        <ChatIndividual person="Chetan" status="Received"/>
         <ChatIndividual/>
         <ChatIndividual/>
         <ChatIndividual/>

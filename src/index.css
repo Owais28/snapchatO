@@ -358,8 +358,20 @@ a:hover {
   flex: 1;
 }
 
+.chat__body {
+  margin-top: 1px;
+}
+
 .chat__body-title{
   font-family: 'Graphik Medium';
+  font-size: 1.1rem;
+  margin-bottom: 3px;
+}
+
+.chat__body-messageStatus {
+  /* padding-top: 5px; */
+  font-size: .8rem;
+  color: rgb(217, 217, 217);
 }
 
 .chat__snap {

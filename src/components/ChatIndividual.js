@@ -22,7 +22,7 @@ export default function ChatIndividual(props) {
                 <div className="chat__body-title">
                 {props.person}
                 </div>
-                <div className="chat__body-messageStatues">
+                <div className="chat__body-messageStatus">
                     {props.status}
                 </div>
             </div>
