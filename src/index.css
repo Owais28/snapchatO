@@ -371,7 +371,7 @@ a:hover {
 .chat__body-messageStatus {
   /* padding-top: 5px; */
   font-size: .9rem;
-  color: rgb(217, 217, 217);
+  color: rgb(199, 199, 199);
   display: flex;
   align-items: center;
   /* margin-left: 10px; */
@@ -384,7 +384,7 @@ a:hover {
 
 .chat__snap {
   font-size: 2rem;
-  color: rgb(217, 217, 217);
+  color: rgb(199, 199, 199);
 }
 .status-icon {
   font-size: .8rem;
