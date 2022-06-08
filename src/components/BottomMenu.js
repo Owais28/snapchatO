@@ -8,23 +8,23 @@ export default function BottomMenu() {
     return <FixedBottomSection>
         <FlexWithSpaceBetween>
 
-            <Icon size="1.3">
+            <Icon size="1.4">
             <HiOutlineLocationMarker className="icon"/>
             </Icon>
 
-            <Icon size="1.3">
+            <Icon size="1.4">
             <BsChatRight className="icon"/>
             </Icon>
 
-            <Icon size="1.3">
+            <Icon size="1.4">
             <HiOutlineCamera className="icon"/>
             </Icon>
 
-            <Icon size="1.3">
+            <Icon size="1.4">
             <BsPeople className="icon"/>
             </Icon>
 
-            <Icon size="1.3">
+            <Icon size="1.4">
             <BsPlay className="icon"/>
             </Icon>
 
