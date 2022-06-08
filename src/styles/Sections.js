@@ -23,6 +23,7 @@ export const NavbarSection = styled.div`
     padding:0px 8px;
     align-items:center;
     // padding-bottom:8px;
+    position:sticky;
 
 `
 
@@ -40,3 +41,30 @@ display:flex;
 
 
 `
+
+export const FixedBottomSection = styled.div`
+position:fixed;
+bottom:0;
+left:0;
+width:100%;
+background-color: black;
+padding:0px 20px;
+height:40px;
+color:white;
+
+`
+
+export const FlexWithSpaceBetween = styled.div`
+display:flex;
+justify-content:space-between;
+color: white;
+height:100%;
+align-items:center;
+`
+export const Icon = styled.div`
+
+.icon {
+    font-size : ${(props)=> props.size}rem ;
+}
+` 
+
