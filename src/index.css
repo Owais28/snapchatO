@@ -402,3 +402,24 @@ align-self:center;
 .status-snap {
   color: red;
 }
+
+.fullheight {
+  height: 100vh;
+  background-color: yellow;
+}
+
+.margin {
+  height: 56.4px;
+}
+
+.snap-1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: yellow;
+  height: 90vh !important;
+}
+
+.swiper-backspace-hidden {
+  height: 100vh !important;
+}

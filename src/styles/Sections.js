@@ -26,6 +26,7 @@ export const NavbarSection = styled.div`
     // padding-bottom:8px;
     position:sticky;
     top:0;
+    z-index : 2000;
 
 `
 
@@ -45,7 +46,7 @@ display:flex;
 `
 
 export const FixedBottomSection = styled.div`
-position:sticky;
+position:fixed;
 bottom:0;
 left:0;
 width:100%;
@@ -56,6 +57,8 @@ padding:0px 20px;
 border-top-left-radius: 10px;
 border-top-right-radius: 10px;
 color:white;
+z-index:2000;
+bottom:-1px;
 
 `
 

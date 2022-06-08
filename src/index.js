@@ -7,6 +7,11 @@ import './styles/global.css'
 import './styles/navbar.css'
 import { MobileSection, SectionWithPadding } from "./styles/Sections";
 import ChatIndividual from "./components/ChatIndividual";
+import UseSwiper from './components/SlideNextButton'
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css';
+import { useSwiper } from "swiper/react";
+
 const msgs = [
     {
         person:"M Imamuddin",
@@ -290,9 +295,19 @@ const msgs = [
 ]
 
 export default function App() {
+
+    const swiper = useSwiper();
+
     return <div className="app">
     <MobileSection>
         <Navbar/>
+        <Swiper
+      spaceBetween={0}
+      slidesPerView={1}
+      onSlideChange={() => console.log('slide change')}
+      onSwiper={(swiper) => console.log(swiper)}
+    >
+        <SwiperSlide virtualIndex={1}>
         {msgs.map(
             (msg) => <ChatIndividual 
             person={msg.person} 
@@ -300,7 +315,7 @@ export default function App() {
             status={msg.status}
             time={msg.time}
             />
-        )}
+            )}
         {/* <ChatIndividual person="M Imamuddin" originalStatus="received-story" status="received" time="8h"/>
         <ChatIndividual person="Chetan" originalStatus="received-msg" status="received"/>
         <ChatIndividual person="Chetan" originalStatus="viewed-msg" status="Viewed"/>
@@ -319,9 +334,27 @@ export default function App() {
         <ChatIndividual/>
         <ChatIndividual/>
         <ChatIndividual/>
-        <ChatIndividual/> */}
+    <ChatIndividual/> */}
 
-        <BottomMenu/>
+    </SwiperSlide>
+    <SwiperSlide virtualIndex={2} className="snap-1">
+        Slide 2
+    </SwiperSlide>
+    <SwiperSlide virtualIndex={3} className="snap-1">
+        Slide 3
+    </SwiperSlide>
+    <SwiperSlide virtualIndex={4} className="snap-1">
+        Slide 4
+    </SwiperSlide>
+    <SwiperSlide virtualIndex={5} className="snap-1">
+        Slide 5
+    </SwiperSlide>
+    {/* <UseSwiper/> */}
+    <div className="margin">
+        &nbsp;
+    </div>
+<BottomMenu />
+    </Swiper>
     </MobileSection>
     </div>
 }
