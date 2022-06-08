@@ -9,10 +9,12 @@ import { MobileSection, SectionWithPadding } from "./styles/Sections";
 
 
 export default function App() {
-    return <MobileSection>
+    return <div className="app">
+    <MobileSection>
         <Navbar/>
         <BottomMenu/>
-    </MobileSection>;
+    </MobileSection>
+    </div>
 }
 
 
@@ -23,5 +25,5 @@ export default function App() {
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
 root.render(
-    <App/>
+    <App />
     )

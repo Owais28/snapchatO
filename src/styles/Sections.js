@@ -47,9 +47,12 @@ position:fixed;
 bottom:0;
 left:0;
 width:100%;
+max-width:460px;
 background-color: black;
 padding:0px 20px;
-height:40px;
+// height:50px;
+border-top-left-radius: 10px;
+border-top-right-radius: 10px;
 color:white;
 
 `
@@ -62,9 +65,13 @@ height:100%;
 align-items:center;
 `
 export const Icon = styled.div`
+height:max-content;
+padding:10px 20px;
+align-self:center;
 
 .icon {
     font-size : ${(props)=> props.size}rem ;
+    color : white;
 }
 ` 
 

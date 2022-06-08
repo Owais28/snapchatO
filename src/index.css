@@ -306,6 +306,10 @@ label[htmlFor="search"]{}
   font-size: 2rem;
 }
 
+.app {
+  margin: 0 auto;
+}
+
 .warning {
   background-color: rgb(253, 202, 202);
   border-left: 5px solid rgb(214, 4, 4);
