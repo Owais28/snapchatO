@@ -15,8 +15,9 @@ export const SectionWithPadding = styled.div`
 
 export const NavbarSection = styled.div`
     width : 100%;
-    background-color:yellow;
-    height:50px;
+    background-color:white;
+    border-bottom:1px solid whitesmoke;
+    height:60px;
     display:flex;
     justify-content:space-between;
     padding:0px 8px;
@@ -27,7 +28,14 @@ export const NavbarSection = styled.div`
 export const IconWithBackground = styled.div`
 
 background-color:whitesmoke;
-width:30px;
+width:40px;
+height:40px;
 padding:4px;
+border-radius:100px;
+color:rgb(87,87,87);
+font-weight:600;
+font-size:1.4rem;
+display:flex;
+
 
 `

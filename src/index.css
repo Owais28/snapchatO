@@ -36,6 +36,13 @@ code {
   
 }
 
+.icons {
+  margin: auto auto;
+  display: block;
+}
+color {
+  color: rgb(87, 87, 87);
+}
 @font-face {
   font-family: 'Graphik Black';
   src: url('./fonts/GraphikBlack.otf');
