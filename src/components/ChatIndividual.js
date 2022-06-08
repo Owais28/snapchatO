@@ -2,8 +2,35 @@ import React from "react";
 import { Icon, SectionWithPadding } from "../styles/Sections";
 import avatar from '../images/snapAvatar.jpg'
 import {HiOutlineCamera} from 'react-icons/hi'
+import {FaRegSquare} from 'react-icons/fa'
+import {BsChatRight} from 'react-icons/bs'
+import {AiOutlineSend} from 'react-icons/ai'
+import {IoSendOutline} from 'react-icons/io5'
+import {IoMdSquareOutline, IoMdSquare} from "react-icons/io";
+
+
 
 export default function ChatIndividual(props) {
+
+    let statusIcon = <BsChatRight/>;
+    if(props.originalStatus === 'viewed-story'){    
+        statusIcon = <IoMdSquareOutline className=" status-icon status-snap"/>
+    } else if(props.originalStatus === 'viewed-msg'){
+        statusIcon = <BsChatRight className="status-icon status-msg"/>
+    } else if(props.originalStatus === 'sent-msg'){
+        statusIcon = <AiOutlineSend className="status-icon status-msg"/>
+    } else if(props.originalStatus === 'sent-story'){
+        statusIcon = <AiOutlineSend className=" status-icon status-snap"/>
+    } else if(props.originalStatus === 'opened-story'){
+        statusIcon = <IoSendOutline className=" status-icon status-snap"/>
+    } else if(props.originalStatus === 'opened-msg'){
+        statusIcon = <IoSendOutline className=" status-icon status-msg"/>
+    } else if(props.originalStatus === 'received-msg'){
+        statusIcon = <IoMdSquare className="status-icon status-msg"/>
+    } else if(props.originalStatus === 'received-story'){
+        statusIcon = <BsChatRight className="status-icon status-snap"/>
+    }
+
     return <SectionWithPadding
     on='lrtb' 
     onRight="9"
@@ -23,7 +50,10 @@ export default function ChatIndividual(props) {
                 {props.person}
                 </div>
                 <div className="chat__body-messageStatus">
-                    {props.status}
+                    {statusIcon}
+                    <div className="status-message">
+                    {props.status} <span>&bull; {props.time}</span>
+                    </div>
                 </div>
             </div>
 

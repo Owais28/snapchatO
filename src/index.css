@@ -370,11 +370,29 @@ a:hover {
 
 .chat__body-messageStatus {
   /* padding-top: 5px; */
-  font-size: 1rem;
+  font-size: .9rem;
   color: rgb(217, 217, 217);
+  display: flex;
+  align-items: center;
+  /* margin-left: 10px; */
+  word-spacing: .4rem;
+}
+
+.status-message {
+  margin-left: 5px;
 }
 
 .chat__snap {
   font-size: 2rem;
   color: rgb(217, 217, 217);
+}
+.status-icon {
+  font-size: .8rem;
+}
+.status-msg {
+  color: rgb(48, 177, 252);
+}
+
+.status-snap {
+  color: red;
 }
