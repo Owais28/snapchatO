@@ -337,6 +337,13 @@ a:hover {
   width: 100%;
   align-items: center;
 }
+
+.chat__wrapper .img-icon {
+  /* width: 40px;
+  height: 40px;
+  border-radius: none; */
+
+}
 .mr-1 {
   margin-right: 13px;
 }
@@ -348,7 +355,11 @@ a:hover {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 100%;
+  flex: 1;
+}
+
+.chat__body-title{
+  font-family: 'Graphik Medium';
 }
 
 .chat__snap {

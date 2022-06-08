@@ -12,18 +12,18 @@ export default function ChatIndividual(props) {
     onBottom="6" className="chat__border"
     >
         <div className="chat__wrapper">
-            <div className="mr-1 img-icon">
+            <div className="img-icon">
             {/* <BsFillPersonFill className="icons"/> */}
             <img src={avatar} alt="" />
             </div>
 
             <div className="chat__data">
-            <div className="chat__body">
+            <div className="ml-1 chat__body">
                 <div className="chat__body-title">
                 {props.person}
                 </div>
                 <div className="chat__body-messageStatues">
-                    {props.status}P
+                    {props.status}
                 </div>
             </div>
 
