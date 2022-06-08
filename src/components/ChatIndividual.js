@@ -33,8 +33,8 @@ export default function ChatIndividual(props) {
 
     return <SectionWithPadding
     on='lrtb' 
-    onRight="9"
-    onLeft="9"
+    onRight="14"
+    onLeft="14"
     onTop="6"
     onBottom="6" className="chat__border"
     >
@@ -58,9 +58,9 @@ export default function ChatIndividual(props) {
             </div>
 
             <div className="chat__sendSnapIcon">
-                <Icon>
+                <div className="ICON">
                     <HiOutlineCamera className="chat__snap"/>
-                </Icon>
+                </div>
             </div>
             </div>
 

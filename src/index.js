@@ -46,15 +46,15 @@ const msgs = [
     },
     {
         person:"Zuha",
-        originalStatus : "sent-snap",
+        originalStatus : "sent-story",
         status : 'Delivered',
         time : "10min"
     },
     {
-        person:"Faisal CSE",
-        originalStatus : "opened-story",
-        status : 'Opened',
-        time : "20s"
+        person:"Irfan Bro",
+        originalStatus : "received-msg",
+        status : 'received',
+        time : "50min"
     },
     {
         person:"Hassan",
@@ -63,25 +63,25 @@ const msgs = [
         time : "3min"
     },
     {
-        person:"Zuha",
-        originalStatus : "sent-snap",
-        status : 'Delivered',
-        time : "10min"
+        person:"Irfan Bro",
+        originalStatus : "received-msg",
+        status : 'received',
+        time : "50min"
     },
     {
         person:"Golu",
-        originalStatus : "opened-snap",
-        status : 'Opened',
-        time : "20s"
-    },
-    {
-        person:"Faisal CSE",
         originalStatus : "opened-story",
         status : 'Opened',
         time : "20s"
+    },
+    {
+        person:"Irfan Bro",
+        originalStatus : "received-msg",
+        status : 'received',
+        time : "50min"
     },{
         person:"Golu",
-        originalStatus : "opened-snap",
+        originalStatus : "opened-story",
         status : 'Opened',
         time : "20s"
     },
@@ -123,7 +123,7 @@ const msgs = [
     },
     {
         person:"Zuha",
-        originalStatus : "sent-snap",
+        originalStatus : "sent-story",
         status : 'Delivered',
         time : "10min"
     },
@@ -140,14 +140,14 @@ const msgs = [
         time : "3min"
     },
     {
-        person:"Zuha",
-        originalStatus : "sent-snap",
-        status : 'Delivered',
-        time : "10min"
+        person:"Irfan Bro",
+        originalStatus : "received-msg",
+        status : 'received',
+        time : "50min"
     },
     {
         person:"Golu",
-        originalStatus : "opened-snap",
+        originalStatus : "opened-story",
         status : 'Opened',
         time : "20s"
     },
@@ -157,10 +157,10 @@ const msgs = [
         status : 'Opened',
         time : "20s"
     },{
-        person:"Golu",
-        originalStatus : "opened-snap",
-        status : 'Opened',
-        time : "20s"
+        person:"Irfan Bro",
+        originalStatus : "received-msg",
+        status : 'received',
+        time : "50min"
     },
     {
         person:"M Imamuddin",
@@ -200,44 +200,68 @@ const msgs = [
     },
     {
         person:"Zuha",
-        originalStatus : "sent-snap",
+        originalStatus : "sent-story",
         status : 'Delivered',
         time : "10min"
     },
     {
-        person:"Faisal CSE",
-        originalStatus : "opened-story",
-        status : 'Opened',
-        time : "20s"
+        person:"Irfan Bro",
+        originalStatus : "received-msg",
+        status : 'received',
+        time : "50min"
     },
     {
-        person:"Hassan",
-        originalStatus : "sent-story",
-        status : 'Delivered',
-        time : "3min"
+        person:"Saquid Bro",
+        originalStatus : "viewed-story",
+        status : 'received',
+        time : "2h"
     },
     {
         person:"Zuha",
-        originalStatus : "sent-snap",
+        originalStatus : "sent-story",
         status : 'Delivered',
         time : "10min"
     },
     {
-        person:"Golu",
-        originalStatus : "opened-snap",
-        status : 'Opened',
-        time : "20s"
+        person:"Irfan Bro",
+        originalStatus : "received-msg",
+        status : 'received',
+        time : "50min"
     },
     {
-        person:"Faisal CSE",
-        originalStatus : "opened-story",
-        status : 'Opened',
-        time : "20s"
+        person:"Saquid Bro",
+        originalStatus : "viewed-story",
+        status : 'received',
+        time : "2h"
     },{
         person:"Golu",
-        originalStatus : "opened-snap",
+        originalStatus : "opened-story",
         status : 'Opened',
         time : "20s"
+    },
+    {
+        person:"Irfan Bro",
+        originalStatus : "received-msg",
+        status : 'received',
+        time : "50min"
+    },
+    {
+        person:"Saquid Bro",
+        originalStatus : "viewed-story",
+        status : 'received',
+        time : "2h"
+    },
+    {
+        person:"Zuha",
+        originalStatus : "sent-story",
+        status : 'Delivered',
+        time : "10min"
+    },
+    {
+        person:"Saquid Bro",
+        originalStatus : "viewed-story",
+        status : 'received',
+        time : "2h"
     },
     {
         person:"Faisal CSE",
@@ -252,40 +276,16 @@ const msgs = [
         time : "3min"
     },
     {
-        person:"Zuha",
-        originalStatus : "sent-snap",
-        status : 'Delivered',
-        time : "10min"
+        person:"Saquid Bro",
+        originalStatus : "viewed-story",
+        status : 'received',
+        time : "2h"
     },
     {
-        person:"Zuha",
-        originalStatus : "sent-snap",
-        status : 'Delivered',
-        time : "10min"
-    },
-    {
-        person:"Faisal CSE",
-        originalStatus : "opened-story",
-        status : 'Opened',
-        time : "20s"
-    },
-    {
-        person:"Hassan",
-        originalStatus : "sent-story",
-        status : 'Delivered',
-        time : "3min"
-    },
-    {
-        person:"Zuha",
-        originalStatus : "sent-snap",
-        status : 'Delivered',
-        time : "10min"
-    },
-    {
-        person:"Golu",
-        originalStatus : "opened-snap",
-        status : 'Opened',
-        time : "20s"
+        person:"Irfan Bro",
+        originalStatus : "received-msg",
+        status : 'received',
+        time : "50min"
     },
 ]
 

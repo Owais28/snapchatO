@@ -364,18 +364,24 @@ a:hover {
 
 .chat__body-title{
   font-family: 'Graphik Medium';
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   margin-bottom: 3px;
 }
 
 .chat__body-messageStatus {
   /* padding-top: 5px; */
+  font-family: 'Graphik Regular';
   font-size: .9rem;
   color: rgb(199, 199, 199);
   display: flex;
   align-items: center;
   /* margin-left: 10px; */
   word-spacing: .4rem;
+}
+.ICON {
+  height:max-content;
+padding:10px 5px;
+align-self:center;
 }
 
 .status-message {

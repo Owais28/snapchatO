@@ -32,8 +32,8 @@ export const NavbarSection = styled.div`
 export const IconWithBackground = styled.div`
 
 background-color:whitesmoke;
-width:40px;
-height:40px;
+width:45px;
+height:45px;
 padding:4px;
 border-radius:100px;
 color:rgb(87,87,87);
@@ -45,7 +45,7 @@ display:flex;
 `
 
 export const FixedBottomSection = styled.div`
-position:fixed;
+position:sticky;
 bottom:0;
 left:0;
 width:100%;
@@ -68,12 +68,16 @@ align-items:center;
 `
 export const Icon = styled.div`
 height:max-content;
-padding:10px 20px;
+padding:15px 20px;
 align-self:center;
 
 .icon {
     font-size : ${(props)=> props.size}rem ;
     color : white;
+}
+
+&:hover {
+    color : blue;
 }
 ` 
 
