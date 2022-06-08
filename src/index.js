@@ -1,31 +1,25 @@
 import React from "react";
 import ReactDOM  from "react-dom/client";
-import { BiAddToQueue, BiCreditCardFront, BiPen, BiSearch } from "react-icons/bi";
 import Navbar from "./components/Navbar";
 import './index.css'
+import './styles/global.css'
+import './styles/navbar.css'
+import { MobileSection, SectionWithPadding } from "./styles/Sections";
 
 
-   export const NotificationContext = React.createContext()
-
-const App = () =>{
-
-    const [notificationCount, setNotificationCount] = React.useState(95)
-
-    return(<>
-    <NotificationContext.Provider value={{notificationCount, setNotificationCount}}>
-        {/* {console.log(NotificationContext)} */}
-    <Navbar/>
-    <div className="search__wrapper" onClick={() => setNotificationCount(notificationCount + 1)}>
-    <BiAddToQueue className="addToQueue"/>
-    </div>
-    
-    </NotificationContext.Provider>
-    </>
-    )
+export default function App() {
+    return <MobileSection>
+        <Navbar/>
+    </MobileSection>;
 }
 
 
+
+
+
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
+
 root.render(
     <App/>
-)
+    )

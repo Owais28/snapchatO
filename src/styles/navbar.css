@@ -12,6 +12,10 @@
 
 }
 
+.navbar__title {
+    font-family: 'Graphik Bold';
+}
+
 .navlist {
     list-style: none;
     display: flex;
@@ -44,7 +48,7 @@ h4 {
     padding-left: 10px;
     padding-right: 10px;
     height: auto;
-    animation : rotateThis 5s infinite ;
+    /* animation : rotateThis 5s infinite ; */
     transition: none;
 }
 
@@ -156,6 +160,15 @@ h4 {
     position: relative;
     margin-right: 10px;
     margin-left: 10px;
+    justify-content: space-between;
+}
+
+.notification__wrapper .icon {
+    margin: 0px 5px;
+}
+
+.notification__wrapper .icon:hover {
+    color: rgb(111, 205, 243);
 }
 
 .notification {
