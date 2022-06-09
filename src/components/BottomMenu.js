@@ -1,6 +1,6 @@
 import React from "react";
 import { FixedBottomSection, FlexWithSpaceBetween, Icon } from "../styles/Sections";
-import {GrLocation} from 'react-icons/gr'
+// import {GrLocation} from 'react-icons/gr'
 import {BsChatRight, BsPeople, BsPlay} from 'react-icons/bs'
 import {HiOutlineLocationMarker, HiOutlineCamera} from 'react-icons/hi'
 import {useSwiper} from "swiper/react";

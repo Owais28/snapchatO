@@ -5,12 +5,12 @@ import BottomMenu from "./components/BottomMenu";
 import './index.css'
 import './styles/global.css'
 import './styles/navbar.css'
-import { MobileSection, SectionWithPadding } from "./styles/Sections";
+import { MobileSection } from "./styles/Sections";
 import ChatIndividual from "./components/ChatIndividual";
-import UseSwiper from './components/SlideNextButton'
+// import UseSwiper from './components/SlideNextButton'
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
-import { useSwiper } from "swiper/react";
+// import { useSwiper } from "swiper/react";
 import { useEffect } from "react";
 
 const msgs = [
@@ -299,17 +299,29 @@ export default function App(){
 
     useEffect(
         () => {
-            const app = document.querySelector('.app');
-            app.onclick = () => {
+            const fullscreenModal = document.querySelector('.fullscreenModalbody')
+            const fullscreenbtn = document.querySelector('#fullscreenBtn');
+            fullscreenbtn.onclick = () => {
                 document.documentElement.requestFullscreen();
+                fullscreenModal.remove();
             }
+
+
+
         }
     ,[])
     
 
-    const swiper = useSwiper();
     
     return <div className="app">
+        <div className="fullscreenModalbody">
+            <div className="content">
+            <div className="qtn">
+                Please use app in fullscreen.
+            </div>
+            <button id="fullscreenBtn">Yes, take me there 😊</button>
+            </div>
+        </div>
     <MobileSection className="bg-black">
         <Navbar/>
         <Swiper
@@ -318,28 +330,8 @@ export default function App(){
       //   onSlideChange={() => console.log('slide change')}
       //   onSwiper={(swiper) => console.log(swiper)}
       >
-        <SwiperSlide virtualIndex={1} className="snap-1">
-        Chat 💭
-        {/* <ChatIndividual person="M Imamuddin" originalStatus="received-story" status="received" time="8h"/>
-        <ChatIndividual person="Chetan" originalStatus="received-msg" status="received"/>
-        <ChatIndividual person="Chetan" originalStatus="viewed-msg" status="Viewed"/>
-        <ChatIndividual person="Chetan" originalStatus="received-msg" status="received"/>
-        <ChatIndividual person="Chetan" originalStatus="viewed-story" status="Viewed"/>
-        <ChatIndividual person="Chetan" originalStatus="sent-msg" status="Sent"/>
-        <ChatIndividual person="Chetan" originalStatus="sent-story" status="Sent"/>
-        <ChatIndividual person="Chetan" originalStatus="received-msg" status="received"/>
-        <ChatIndividual person="Chetan" originalStatus="received-story" status="received"/>
-        <ChatIndividual person="Chetan" originalStatus="opened-msg" status="Opened"/>
-        <ChatIndividual person="Chetan" originalStatus="opened-story" status="Opened"/>
-        <ChatIndividual person="Chetan" originalStatus="received-msg" status="received"/>
-        <ChatIndividual/>
-        <ChatIndividual/>
-        <ChatIndividual/>
-        <ChatIndividual/>
-        <ChatIndividual/>
-        <ChatIndividual/>
-    <ChatIndividual/> */}
-
+        <SwiperSlide virtualIndex={1} className="snap-1 map">
+        Snap Map 🗺️
     </SwiperSlide>
     <SwiperSlide virtualIndex={2}>
     <div className="chat__container">

@@ -440,3 +440,52 @@ align-self:center;
 .bg-black {
   background-color: black !important;
 }
+
+.fullscreenModalbody {
+  z-index: 2400;
+  position: fixed;
+  /* top: 50vh;
+  right: 50vw; */
+  background-color: rgba(0, 0, 0, 0.852);
+  /* padding: 20px; */
+  width: 100%;
+  height: 100%;
+}
+
+.fullscreenModalbody .content {
+  background-color: white;
+  position: fixed;
+  top: 0vh;
+  right: 50vw;
+  padding: 20px;
+  border-radius: 8px;
+  animation: openmodal .5s ease forwards;
+}
+
+@keyframes openmodal {
+  from{
+    top: 0vh;
+  } 
+  to {
+    top: 50vh;
+  }
+}
+.fullscreenModalbody .qtn {
+  margin-bottom: 10px;
+}
+
+.fullscreenModalbody .bg {
+  background-color: black;
+}
+
+.fullscreenModalbody button {
+  background-color: black;
+  border-radius: 8px;
+  padding: 10px;
+  align-items: center;
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+  color: white;
+  border: none;
+}

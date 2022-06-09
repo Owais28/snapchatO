@@ -1,8 +1,8 @@
 import React from "react";
-import { Icon, SectionWithPadding } from "../styles/Sections";
+import {SectionWithPadding } from "../styles/Sections";
 import avatar from '../images/snapAvatar.jpg'
 import {HiOutlineCamera} from 'react-icons/hi'
-import {FaRegSquare} from 'react-icons/fa'
+// import {FaRegSquare} from 'react-icons/fa'
 import {BsChatRight} from 'react-icons/bs'
 import {AiOutlineSend} from 'react-icons/ai'
 import {IoSendOutline} from 'react-icons/io5'
