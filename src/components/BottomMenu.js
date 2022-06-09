@@ -7,8 +7,6 @@ import {useSwiper} from "swiper/react";
 
 export default function BottomMenu() {
     const swiper = useSwiper();
-
-console.log(swiper)
     return <FixedBottomSection>
         <FlexWithSpaceBetween>
 

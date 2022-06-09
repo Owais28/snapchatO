@@ -491,3 +491,7 @@ align-self:center;
   color: white;
   border: none;
 }
+
+.chatIsActive {
+  color: rgb(28, 171, 254) !important;
+}

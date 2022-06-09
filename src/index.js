@@ -329,6 +329,7 @@ export default function App(){
       spaceBetween={13}
       slidesPerView={1}
       initialSlide={1}
+      zoom={false}
       //   onSlideChange={() => console.log('slide change')}
       //   onSwiper={(swiper) => console.log(swiper)}
       >
