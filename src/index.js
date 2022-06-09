@@ -11,6 +11,7 @@ import UseSwiper from './components/SlideNextButton'
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import { useSwiper } from "swiper/react";
+import { useEffect } from "react";
 
 const msgs = [
     {
@@ -294,7 +295,16 @@ const msgs = [
     },
 ]
 
-export default function App() {
+export default function App(){
+
+    useEffect(
+        () => {
+            const app = document.querySelector('.app');
+            app.onclick = () => {
+                document.documentElement.requestFullscreen();
+            }
+        }
+    )
 
     const swiper = useSwiper();
 
