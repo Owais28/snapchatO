@@ -308,28 +308,18 @@ export default function App(){
     
 
     const swiper = useSwiper();
-
+    
     return <div className="app">
     <MobileSection className="bg-black">
         <Navbar/>
         <Swiper
       spaceBetween={13}
       slidesPerView={1}
-    //   onSlideChange={() => console.log('slide change')}
-    //   onSwiper={(swiper) => console.log(swiper)}
-    >
-        <SwiperSlide virtualIndex={1}>
-            <div className="chat__container">
-
-        {msgs.map(
-            (msg) => <ChatIndividual 
-            person={msg.person} 
-            originalStatus={msg.originalStatus}
-            status={msg.status}
-            time={msg.time}
-            />
-            )}
-            </div>
+      //   onSlideChange={() => console.log('slide change')}
+      //   onSwiper={(swiper) => console.log(swiper)}
+      >
+        <SwiperSlide virtualIndex={1} className="snap-1">
+        Chat 💭
         {/* <ChatIndividual person="M Imamuddin" originalStatus="received-story" status="received" time="8h"/>
         <ChatIndividual person="Chetan" originalStatus="received-msg" status="received"/>
         <ChatIndividual person="Chetan" originalStatus="viewed-msg" status="Viewed"/>
@@ -351,8 +341,18 @@ export default function App(){
     <ChatIndividual/> */}
 
     </SwiperSlide>
-    <SwiperSlide virtualIndex={2} className="snap-1">
-        Chat 💭
+    <SwiperSlide virtualIndex={2}>
+    <div className="chat__container">
+
+{msgs.map(
+    (msg) => <ChatIndividual 
+    person={msg.person} 
+    originalStatus={msg.originalStatus}
+    status={msg.status}
+    time={msg.time}
+    />
+    )}
+    </div>
     </SwiperSlide>
     <SwiperSlide virtualIndex={3} className="snap-1">
         Camera 📸
