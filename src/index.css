@@ -469,7 +469,7 @@ align-self:center;
     top: 0vh;
   } 
   to {
-    top: 50%;
+    top: calc(55vh - 120px);
   }
 }
 .fullscreenModalbody .qtn {
