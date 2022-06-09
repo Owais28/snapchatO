@@ -304,7 +304,8 @@ export default function App(){
                 document.documentElement.requestFullscreen();
             }
         }
-    )
+    ,[])
+    
 
     const swiper = useSwiper();
 
