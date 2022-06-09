@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const MobileSection = styled.div`
 
     max-width: 460px;
-    background-color:white;
+    background-color:;
 
 `
 export const SectionWithPadding = styled.div`
@@ -12,11 +12,12 @@ export const SectionWithPadding = styled.div`
         return 'padding-left : 8px;padding-right:8px' 
     else if(props.on === "lrtb") return `padding-left : ${props.onLeft}px;padding-right :${props.onRight}px;
     padding-top :${props.onTop}px;padding-bottom :${props.onBottom}px;`}};
+    background-color:white;
 ` 
 
 export const NavbarSection = styled.div`
     width : 100%;
-    background-color:transparent;
+    background-color:white;
     border-bottom:1px solid whitesmoke;
 backdrop-filter : blur(1rem) ;
     height:60px;

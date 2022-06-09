@@ -299,13 +299,13 @@ export default function App() {
     const swiper = useSwiper();
 
     return <div className="app">
-    <MobileSection>
+    <MobileSection className="bg-black">
         <Navbar/>
         <Swiper
-      spaceBetween={0}
+      spaceBetween={13}
       slidesPerView={1}
-      onSlideChange={() => console.log('slide change')}
-      onSwiper={(swiper) => console.log(swiper)}
+    //   onSlideChange={() => console.log('slide change')}
+    //   onSwiper={(swiper) => console.log(swiper)}
     >
         <SwiperSlide virtualIndex={1}>
             <div className="chat__container">
@@ -341,16 +341,16 @@ export default function App() {
 
     </SwiperSlide>
     <SwiperSlide virtualIndex={2} className="snap-1">
-        Chat
+        Chat 💭
     </SwiperSlide>
     <SwiperSlide virtualIndex={3} className="snap-1">
-        Camera
+        Camera 📸
     </SwiperSlide>
     <SwiperSlide virtualIndex={4} className="snap-1">
-        Stories
+        Friends 👨🏻
     </SwiperSlide>
     <SwiperSlide virtualIndex={5} className="snap-1">
-        Videos
+        Spotlight 📹
     </SwiperSlide>
     {/* <UseSwiper/> */}
     <div className="margin">

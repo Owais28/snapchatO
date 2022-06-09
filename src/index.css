@@ -417,15 +417,26 @@ align-self:center;
   justify-content: center;
   align-items: center;
   background-color: yellow;
-  height: 81vh !important;
+  height: calc((100vh - 60px - 56.4px)) !important;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
 }
 
 .swiper-backspace-hidden {
-  height: 100vh !important;
+  height: calc(100vh - 60px - 56.4px) !important;
+}
+.swiper-backface-hidden {
 }
 
 .chat__container {
-  max-height: 80vh;
+  height: calc(100vh - 60px - 56.4px);
   overflow-y: scroll;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  /* flex: 1; */
 
+}
+
+.bg-black {
+  background-color: black !important;
 }
