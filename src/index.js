@@ -10,6 +10,7 @@ import ChatIndividual from "./components/ChatIndividual";
 // import UseSwiper from './components/SlideNextButton'
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
+
 // import { useSwiper } from "swiper/react";
 import { useEffect } from "react";
 
@@ -327,10 +328,11 @@ export default function App(){
         <Swiper
       spaceBetween={13}
       slidesPerView={1}
+      initialSlide={1}
       //   onSlideChange={() => console.log('slide change')}
       //   onSwiper={(swiper) => console.log(swiper)}
       >
-        <SwiperSlide virtualIndex={1} className="snap-1 map">
+        <SwiperSlide  virtualIndex={1} className="snap-1 map">
         Snap Map 🗺️
     </SwiperSlide>
     <SwiperSlide virtualIndex={2}>
