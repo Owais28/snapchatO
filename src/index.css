@@ -417,9 +417,15 @@ align-self:center;
   justify-content: center;
   align-items: center;
   background-color: yellow;
-  height: 90vh !important;
+  height: 81vh !important;
 }
 
 .swiper-backspace-hidden {
   height: 100vh !important;
+}
+
+.chat__container {
+  max-height: 80vh;
+  overflow-y: scroll;
+
 }

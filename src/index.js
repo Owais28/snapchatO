@@ -308,6 +308,8 @@ export default function App() {
       onSwiper={(swiper) => console.log(swiper)}
     >
         <SwiperSlide virtualIndex={1}>
+            <div className="chat__container">
+
         {msgs.map(
             (msg) => <ChatIndividual 
             person={msg.person} 
@@ -316,6 +318,7 @@ export default function App() {
             time={msg.time}
             />
             )}
+            </div>
         {/* <ChatIndividual person="M Imamuddin" originalStatus="received-story" status="received" time="8h"/>
         <ChatIndividual person="Chetan" originalStatus="received-msg" status="received"/>
         <ChatIndividual person="Chetan" originalStatus="viewed-msg" status="Viewed"/>
@@ -338,16 +341,16 @@ export default function App() {
 
     </SwiperSlide>
     <SwiperSlide virtualIndex={2} className="snap-1">
-        Slide 2
+        Chat
     </SwiperSlide>
     <SwiperSlide virtualIndex={3} className="snap-1">
-        Slide 3
+        Camera
     </SwiperSlide>
     <SwiperSlide virtualIndex={4} className="snap-1">
-        Slide 4
+        Stories
     </SwiperSlide>
     <SwiperSlide virtualIndex={5} className="snap-1">
-        Slide 5
+        Videos
     </SwiperSlide>
     {/* <UseSwiper/> */}
     <div className="margin">
