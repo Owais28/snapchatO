@@ -12,7 +12,8 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 
 // import { useSwiper } from "swiper/react";
-import { useEffect } from "react";
+// import { useEffect } from "react";
+// import SearhIcon from "./components/SearhIcon";
 
 const msgs = [
     {
@@ -298,32 +299,33 @@ const msgs = [
 
 export default function App(){
 
-    useEffect(
-        () => {
-            const fullscreenModal = document.querySelector('.fullscreenModalbody')
-            const fullscreenbtn = document.querySelector('#fullscreenBtn');
-            fullscreenbtn.onclick = () => {
-                document.documentElement.requestFullscreen();
-                fullscreenModal.remove();
-            }
+    // useEffect(
+    //     () => {
+    //         const fullscreenModal = document.querySelector('.fullscreenModalbody')
+    //         const fullscreenbtn = document.querySelector('#fullscreenBtn');
+    //         fullscreenbtn.onclick = () => {
+    //             document.documentElement.requestFullscreen();
+    //             fullscreenModal.remove();
+    //         }
 
 
 
-        }
-    ,[])
+    //     }
+    // ,[])
     
     
     
     return <div className="app">
-        <div className="fullscreenModalbody">
+        {/* <div className="fullscreenModalbody">
             <div className="content">
             <div className="qtn">
                 Please use app in fullscreen.
             </div>
             <button id="fullscreenBtn">Yes, take me there 😊</button>
             </div>
-        </div>
+        </div> */}
     <MobileSection className="bg-black">
+        {/* <SearhIcon/> */}
         <Navbar/>
         <Swiper
       spaceBetween={13}

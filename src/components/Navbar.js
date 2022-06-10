@@ -5,18 +5,23 @@ import {BsFillPersonPlusFill} from 'react-icons/bs'
 import {FiMoreHorizontal} from 'react-icons/fi'
 import avatar from '../images/snapAvatar.jpg'
 import '../index.css'
+import SearhIcon from "./SearhIcon";
 
 export default function Navbar() {
     return <NavbarSection>
 
         <div className="navbar__userAvatar">
+
             <div className="mr-1 img-icon">
                 {/* <BsFillPersonFill className="icons"/> */}
                 <img src={avatar} alt="" />
             </div>
-            <IconWithBackground>
+            {/* <IconWithBackground>
                 <IoSearch className="icons"/>
-            </IconWithBackground>
+                
+            </IconWithBackground> */}
+            {/* /newly added : Testing purpose*/}
+            <SearhIcon/>
         </div>
 
         <div className="navbar__title">
