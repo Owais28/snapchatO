@@ -299,19 +299,19 @@ const msgs = [
 
 export default function App(){
 
-    // useEffect(
-    //     () => {
-    //         const fullscreenModal = document.querySelector('.fullscreenModalbody')
-    //         const fullscreenbtn = document.querySelector('#fullscreenBtn');
-    //         fullscreenbtn.onclick = () => {
-    //             document.documentElement.requestFullscreen();
-    //             fullscreenModal.remove();
-    //         }
+    useEffect(
+        () => {
+            const fullscreenModal = document.querySelector('.fullscreenModalbody')
+            const fullscreenbtn = document.querySelector('#fullscreenBtn');
+            fullscreenbtn.onclick = () => {
+                document.documentElement.requestFullscreen();
+                fullscreenModal.remove();
+            }
 
 
 
-    //     }
-    // ,[])
+        }
+    ,[])
     
     
     
