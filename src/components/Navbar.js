@@ -1,6 +1,6 @@
 import React from "react";
 import { NavbarSection, IconWithBackground } from "../styles/Sections";
-import {IoSearch} from 'react-icons/io5'
+// import {IoSearch} from 'react-icons/io5'
 import {BsFillPersonPlusFill} from 'react-icons/bs'
 import {FiMoreHorizontal} from 'react-icons/fi'
 import avatar from '../images/snapAvatar.jpg'

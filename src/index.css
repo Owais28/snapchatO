@@ -537,6 +537,14 @@ align-self:center;
   display: none;
   width: 150px;
   font-size: 1.2rem;
+  font-family: 'Graphik Medium';
+
+}
+
+.search__bar::placeholder {
+  font-family: 'Graphik Regular';
+  font-size: .8rem;
+  /* letter-spacing: .1rem; */
 }
 
 .visibility {

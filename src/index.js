@@ -342,7 +342,7 @@ export default function App(){
     <div className="chat__container">
 
 {msgs.map(
-    (msg) => <ChatIndividual 
+    (msg,index) => <ChatIndividual key={index}
     person={msg.person} 
     originalStatus={msg.originalStatus}
     status={msg.status}
