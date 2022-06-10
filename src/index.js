@@ -12,7 +12,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 
 // import { useSwiper } from "swiper/react";
-// import { useEffect } from "react";
+import { useEffect } from "react";
 // import SearhIcon from "./components/SearhIcon";
 
 const msgs = [

@@ -455,21 +455,24 @@ align-self:center;
 .fullscreenModalbody .content {
   background-color: white;
   position: fixed;
-  top: 0vh;
+  bottom: 0vh;
   left: 15vw ;
   right: 15vw;
   padding: 20px;
   border-radius: 8px;
   animation: openmodal .5s ease forwards;
   max-width: max-content;
+  transform: scale(0);
 }
 
 @keyframes openmodal {
   from{
-    top: 0vh;
+    bottom: 0vh;
+    transform: scale(0);
   } 
   to {
-    top: calc(55vh - 120px);
+    bottom: calc(45%);
+    transform: scale(1);
   }
 }
 .fullscreenModalbody .qtn {
