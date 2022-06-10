@@ -316,14 +316,14 @@ export default function App(){
     
     
     return <div className="app">
-        {/* <div className="fullscreenModalbody">
+        <div className="fullscreenModalbody">
             <div className="content">
             <div className="qtn">
                 Please use app in fullscreen.
             </div>
             <button id="fullscreenBtn">Yes, take me there 😊</button>
             </div>
-        </div> */}
+        </div>
     <MobileSection className="bg-black">
         {/* <SearhIcon/> */}
         <Navbar/>
