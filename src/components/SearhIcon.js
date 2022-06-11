@@ -4,7 +4,7 @@ import React from "react";
 // import { FiSearch } from "react-icons/fi";
 import { IoSearch } from "react-icons/io5";
 
-export default function SearhIcon() {
+export default function SearhIcon(props) {
 
 
     const [openSearch, setOpenSearch] = React.useState(false)
@@ -38,7 +38,7 @@ export default function SearhIcon() {
     return <div className="search__container" onClick={() => setOpenSearch((prevOption) => !prevOption)}>
         <div className="search__wrapper">
         <IoSearch className="search__icon"/>
-        <input type="search" className="search__bar" placeholder="Search"  />
+        <input type="search" className="search__bar" placeholder="Search" onChange={props.onSearch}  />
         </div>
 
     </div>;

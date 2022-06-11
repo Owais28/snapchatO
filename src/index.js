@@ -6,8 +6,9 @@ import './index.css'
 import './styles/global.css'
 import './styles/navbar.css'
 import { MobileSection } from "./styles/Sections";
-import ChatIndividual from "./components/ChatIndividual";
+// import ChatIndividual from "./components/ChatIndividual";
 // import UseSwiper from './components/SlideNextButton'
+import ChatLog from "./components/ChatLog";
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 
@@ -299,6 +300,8 @@ const msgs = [
 
 export default function App(){
 
+    const [searchedMsgs,setSearchedMsgs] = React.useState(msgs)
+
     useEffect(
         () => {
             const fullscreenModal = document.querySelector('.fullscreenModalbody')
@@ -313,7 +316,15 @@ export default function App(){
         }
     ,[])
     
-    
+    const findMsg = (event) => {
+
+        let searchedName = event.target.value
+        let reg = new RegExp(`${searchedName.toLowerCase()}`,'g')
+        let searchedMsgArray = msgs.filter((msgEvery) => reg.test(msgEvery.person.toLowerCase()))
+        // console.log(searchedMsgArray);
+        setSearchedMsgs(searchedMsgArray)
+        // // console.log(se)
+    }
     
     return <div className="app">
         <div className="fullscreenModalbody">
@@ -326,9 +337,9 @@ export default function App(){
         </div>
     <MobileSection className="bg-black">
         {/* <SearhIcon/> */}
-        <Navbar/>
+        <Navbar onSearch={findMsg}/>
         <Swiper
-      spaceBetween={13}
+      spaceBetween={10}
       slidesPerView={1}
       initialSlide={1}
       zoom={false}
@@ -338,28 +349,23 @@ export default function App(){
         <SwiperSlide  virtualIndex={1} className="snap-1 map">
         Snap Map 🗺️
     </SwiperSlide>
-    <SwiperSlide virtualIndex={2}>
-    <div className="chat__container">
 
-{msgs.map(
-    (msg,index) => <ChatIndividual key={index}
-    person={msg.person} 
-    originalStatus={msg.originalStatus}
-    status={msg.status}
-    time={msg.time}
-    />
-    )}
-    </div>
+    <SwiperSlide virtualIndex={2}>
+        <ChatLog msgs={searchedMsgs} />
     </SwiperSlide>
+
     <SwiperSlide virtualIndex={3} className="snap-1">
         Camera 📸
     </SwiperSlide>
+
     <SwiperSlide virtualIndex={4} className="snap-1">
         Friends 👨🏻
     </SwiperSlide>
+
     <SwiperSlide virtualIndex={5} className="snap-1">
         Spotlight 📹
     </SwiperSlide>
+
     {/* <UseSwiper/> */}
     <div className="margin">
         &nbsp;

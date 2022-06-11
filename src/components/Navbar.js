@@ -7,7 +7,7 @@ import avatar from '../images/snapAvatar.jpg'
 import '../index.css'
 import SearhIcon from "./SearhIcon";
 
-export default function Navbar() {
+export default function Navbar(props) {
     return <NavbarSection>
 
         <div className="navbar__userAvatar">
@@ -21,7 +21,7 @@ export default function Navbar() {
                 
             </IconWithBackground> */}
             {/* /newly added : Testing purpose*/}
-            <SearhIcon/>
+            <SearhIcon onSearch={props.onSearch}/>
         </div>
 
         <div className="navbar__title">

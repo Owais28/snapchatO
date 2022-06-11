@@ -433,6 +433,7 @@ align-self:center;
   overflow-y: scroll;
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
+  min-height: calc(100vh - 60px - 56.4px);
   /* flex: 1; */
 
 }
@@ -549,4 +550,27 @@ align-self:center;
 
 .visibility {
   display: block;
+}
+
+/* @media screen and (min-width:500px){
+  -webkit-scrollbar-button {
+    width: 2px;
+  }
+} */
+
+
+.not__found-container {
+  padding: 10px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-height: 100%;
+}
+
+.not__found-container .not__found-icon {
+  font-size: 5rem !important;
+  color: whitesmoke;
+  margin-bottom: 15px;
 }
