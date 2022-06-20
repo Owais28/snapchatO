@@ -511,8 +511,12 @@ align-self:center;
   max-width: max-content;
   /* padding: 4px 4px; */
   overflow: hidden;
+  /* position: absolute; */
+  left: calc(50px + 16px);
+}
+
+.absolute {
   position: absolute;
-  left: calc(50px + 13px);
 }
 
 .search__wrapper {

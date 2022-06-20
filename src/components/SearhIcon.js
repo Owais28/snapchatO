@@ -14,9 +14,11 @@ export default function SearhIcon(props) {
             // console.log(openSearch)
             const searchIcon = document.querySelector('.search__icon')
             const searchInput = document.querySelector('.search__bar')
+            const searchContainer = document.querySelector('.search__container')
             // let searchIntervalID;
 
             if(openSearch){
+                searchContainer.classList.add('absolute')
                 searchIcon.classList.add('mr-1','ml-1')
                 searchInput.classList.add('visibility', 'mr-1')
                 searchInput.focus()
@@ -27,6 +29,7 @@ export default function SearhIcon(props) {
             } else {
                 searchIcon.classList.remove('mr-1', 'ml-1')
                 searchInput.classList.remove('visibility', 'mr-1')
+                searchContainer.classList.remove('absolute')
                 searchInput.value = ''
                 searchInput.placeholder = 'Search'
                 // clearInterval(searchIntervalID);
